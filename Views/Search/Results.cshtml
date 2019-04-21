@@ -1,6 +1,6 @@
 
 
-<div class="car-header">
+<!-- <div class="car-header">
         <h3 style="color:azure">Search Results </h3>
         <hr/>
 
@@ -11,4 +11,27 @@
 
 </h1>
 
+</div> -->
+<div class="container results">
+	<div class="row">
+		<div class="card">
+			<div class="card-header">
+				<h3>Search</h3>
+			</div>
+			<div class="card-body">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-search"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="username" value=@ViewBag.SearchText>
+						
+					</div>
+                        <input type="button"  value="Back to Search" class="btn btn-Search float-left search_btn" asp-controller="Search" asp-action="Index">
+		</div>       
+        </div>
+         <div class="card card-results">
+                 <div class="card-header">
+				<h3>Showing Search Results For @ViewBag.SearchText </h3>
+			</div>
+         </div>
 </div>
