@@ -1,0 +1,73 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /* background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg'); */
+    background-image: url('../images/library.jpg');
+    font-size: 1.5rem !important;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.form-control{
+    font-size: 1rem !important;
+    height: 100% !important;
+    font-size: 18px !important;
+    line-height: 1.6825 !important;
+}
+
+.h3,h3{
+    font-size:x-large !important;
+}
+
+.btn{
+    font-size: 1.5rem !important;
+    line-height: 1.8 !important;
+}
+
+.input-group-text{
+    font-size: 1.8em !important;
+    padding-left: 1.35rem !important;
+}
+
+.card.card-search{
+    width: 800px;
+}
+
+.btn.btn-Search {
+    margin-left: 1em;
+}
+
+.main-content{
+    margin-top: 15rem;
+}

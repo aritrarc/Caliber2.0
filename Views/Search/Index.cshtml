@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Search";
+}
+
+
+</div>
+
+<div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card card-search">
+			<div class="card-header">
+				<h3>Search</h3>
+			</div>
+			<div class="card-body">
+				<form asp-controller="Search" asp-action="Details">
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-search"></i></span>
+						</div>
+						<input type="text" name="searchtext" class="form-control" placeholder="Search something here">
+                        <div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-microphone"></i></span>
+						</div>
+						<input type="submit"  value="Search" class="btn btn-Search float-right login_btn">
+					</div>                              
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
