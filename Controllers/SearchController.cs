@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Caliber2.Models;
+using Caliber2.Helpers;
 
 namespace Caliber2.Controllers
 {
@@ -20,6 +21,14 @@ namespace Caliber2.Controllers
         public ViewResult Details(string searchtext)
         {
             ViewBag.SearchText = searchtext;
+            return View("Results");
+        }
+
+        public async Task<ActionResult> Speech()
+        {
+            string speechText = await SpeechToTextHelper.RecognizeSpeechAsync();
+            Console.WriteLine("Speech Recognised:" +speechText);
+            ViewBag.SearchText = speechText;
             return View("Results");
         }
 

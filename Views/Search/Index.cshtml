@@ -18,9 +18,12 @@
 							<span class="input-group-text"><i class="fas fa-search"></i></span>
 						</div>
 						<input type="text" name="searchtext" class="form-control" placeholder="Search something here">
-                        <div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-microphone"></i></span>
-						</div>
+						<a asp-area="" asp-controller="Search" asp-action="Speech">
+                        <div class="input-group-prepend microphone">
+							
+							<span class="input-group-text"><i class="fas fa-microphone">
+							</i></span>
+						</div></a>
 						<input type="submit"  value="Search" class="btn btn-Search float-right login_btn">
 					</div>                              
 				</form>

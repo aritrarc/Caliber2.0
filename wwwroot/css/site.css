@@ -71,3 +71,12 @@ body {
 .main-content{
     margin-top: 15rem;
 }
+
+.input-group-prepend.microphone{
+    height: 100%;
+}
+
+h1.h1{
+    font: bold !important;
+    color: azure !important;
+}
